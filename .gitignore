@@ -1,0 +1,12 @@
+.DS_Store
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
+*.swp
+coverage/*
+spec/dummy_app/public/*
+spec/dummy_app/log/*
+spec/dummy_app/tmp/*
+gemfiles/*.lock
+.rvmrc
