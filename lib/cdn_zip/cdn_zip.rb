@@ -1,4 +1,4 @@
-module AssetSync
+module CdnZip
 
   class << self
 
@@ -37,7 +37,7 @@ module AssetSync
     end
 
     def with_config(&block)
-      return unless AssetSync.enabled?
+      return unless CdnZip.enabled?
 
       errors = config.valid? ? "" : config.errors.full_messages.join(', ')
 

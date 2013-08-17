@@ -17,7 +17,7 @@ def execute(command)
   `#{command}`
 end
 
-describe "AssetSync" do
+describe "CdnZip" do
 
   before(:each) do
     @prefix = SecureRandom.hex(6)

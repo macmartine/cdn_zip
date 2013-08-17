@@ -1,4 +1,4 @@
-module AssetSync
+module CdnZip
   class Storage
     REGEXP_FINGERPRINTED_FILES = /^(.*)\/([^-]+)-[^\.]+\.([^\.]+)$/
 
@@ -21,7 +21,7 @@ module AssetSync
     end
 
     def log(msg)
-      AssetSync.log(msg)
+      CdnZip.log(msg)
     end
 
     def keep_existing_remote_files?
@@ -229,10 +229,10 @@ module AssetSync
 
     def sync
       # fixes: https://github.com/rumblelabs/asset_sync/issues/19
-      log "AssetSync: Syncing."
+      log "CdnZip: Syncing."
       upload_files
       delete_extra_remote_files unless keep_existing_remote_files?
-      log "AssetSync: Done."
+      log "CdnZip: Done."
     end
 
     private

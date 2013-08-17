@@ -1,5 +1,5 @@
 class Rails::Railtie::Configuration
   def cdn_zip
-    AssetSync.config
+    CdnZip.config
   end
 end

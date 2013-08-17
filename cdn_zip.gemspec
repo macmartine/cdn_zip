@@ -5,7 +5,7 @@ require "cdn_zip/version"
 
 Gem::Specification.new do |s|
   s.name        = "cdn_zip"
-  s.version     = AssetSync::VERSION
+  s.version     = CdnZip::VERSION
   s.date        = "2013-08-16"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Mac Martine"]

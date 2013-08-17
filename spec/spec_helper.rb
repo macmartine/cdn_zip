@@ -32,7 +32,7 @@ shared_context "mock without Rails" do
     if defined? Rails
       Object.send(:remove_const, :Rails)
     end
-    AssetSync.stub(:log)
+    CdnZip.stub(:log)
   end
 end
 
@@ -47,7 +47,7 @@ shared_context "mock Rails" do
     Rails.application.stub :config => double('config')
     Rails.application.config.stub :assets => ActiveSupport::OrderedOptions.new
     Rails.application.config.assets.prefix = '/assets'
-    AssetSync.stub(:log)
+    CdnZip.stub(:log)
   end
 end
 

@@ -10,7 +10,7 @@ require "sprockets/railtie"
 if defined?(Bundler)
   Bundler.require(*Rails.groups(:assets => %w(development test)))
 end
-module AssetSyncTest
+module CdnZipTest
   class Application < Rails::Application
     config.encoding = "utf-8"
     config.filter_parameters += [:password]
@@ -25,6 +25,6 @@ module AssetSyncTest
     config.assets.prefix = ENV['cdn_zip_PREFIX']
   end
 end
-AssetSyncTest::Application.initialize!
-AssetSyncTest::Application.load_tasks
+CdnZipTest::Application.initialize!
+CdnZipTest::Application.load_tasks
 # Rake::Task['assets:precompile:all'].invoke

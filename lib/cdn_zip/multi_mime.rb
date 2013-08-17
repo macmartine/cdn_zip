@@ -1,4 +1,4 @@
-module AssetSync
+module CdnZip
   class MultiMime
 
     def self.lookup(ext)
